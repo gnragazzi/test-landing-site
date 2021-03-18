@@ -52,6 +52,7 @@
   --myBlue: #4059ad;
   --transition: all 0.3s linear;
   color: var(--myBlack);
+  scroll-behavior: smooth;
 }
 /* FIN INFORMACIÓN DE BASE */
 /* NAV-BTN */
@@ -224,6 +225,9 @@
   width: 80vw;
   max-width: 1170px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .cuadro-imagen {
@@ -498,4 +502,17 @@
     font-size: 1rem;
     letter-spacing: 0.6rem;
   }
+}
+#submit {
+  display: none;
+}
+#video {
+  display: none;
+}
+#header-img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2;
 }

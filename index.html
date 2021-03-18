@@ -10,26 +10,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./all.js"></script>    
+    <script src="./all.js"></script>
+ 
   </head>
   <body>
     <!-- navbar button -->
     <span class="nav-btn" id="nav-btn"><i class="fas fa-bars"></i></span>
-    <nav class="navbar" id="navbar">
-      <div class="navbar-header">
-        <span class="nav-close" id="nav-close"><i class="fas fa-times"></i></span>
-      </div>
-      <ul class="nav-items">
-        <li><a href="#principal" class="nav-link" id="nav-link1">Principal</a></li>
-        <li><a href="#nos" class="nav-link" id="nav-link2">Nosotros</a></li>
-        <li><a href="#serv" class="nav-link" id="nav-link3">Servicios</a></li>
-        <li><a href="#prod" class="nav-link" id="nav-link4">Productos</a></li>
-        <li><a href="#contact" class="nav-link" id="nav-link5">Contacto</a></li>
-      </ul>
-    </nav>
     
     <!-- BANNER -->
-    <header class="header" id="principal">
+    <header class="header" id="header">
+      <img src="./Imagenes/logo.png" alt="logo" id='header-img'>
+      <nav class="navbar" id="nav-bar">
+        <div class="navbar-header">
+          <span class="nav-close" id="nav-close"><i class="fas fa-times"></i></span>
+        </div>
+        <ul class="nav-items">
+          <li><a href="#header" class="nav-link" id="nav-link1">Principal</a></li>
+          <li><a href="#nos" class="nav-link" id="nav-link2">Nosotros</a></li>
+          <li><a href="#serv" class="nav-link" id="nav-link3">Servicios</a></li>
+          <li><a href="#prod" class="nav-link" id="nav-link4">Productos</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link5">Contacto</a></li>
+        </ul>
+      </nav>
       <div class="name">
         <h1 class="big-name">GerPi Producciones</h1>
         <h3 class="small-name">
@@ -172,16 +174,18 @@
         </article>
         <!-- SECCIÓN DERECHA, DONDE IRA EL FORMULARIO PARA CONTACTARSE -->
         <article class="contacto-form">
-          <form action="#" class="form-group" method="POST">
+          <form action="#" class="form-group" method="POST" id="form">
             <input type="text" class="form-control" name="name" placeholder="Nombre">
-            <input type="email" class="form-control" name="email" placeholder="E-Mail">
+            <input type="email" class="form-control" name="email" placeholder="E-Mail"id='email'>
             <textarea class="form-control" name="message"  rows="5" placeholder="Mensaje"></textarea>
+            <input type="submit" id="submit">
             <button class="boton">Enviar</button>
           </form>
         </article>
       </div>
     </section>
     <!-- FOOTER -->
+    <video src="https://www.youtube.com/watch?v=eXBrn5wvl4A" id="video"></video>
     <footer class="footer">
       <div class="centro clearfix">
         <article class="footer-icons">
@@ -199,5 +203,6 @@
       </div>
     </footer>
     <script src="./app.js"></script>
+       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
   </body>
 </html>

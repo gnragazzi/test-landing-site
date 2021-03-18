@@ -1,5 +1,5 @@
 const navBtn = document.getElementById('nav-btn')
-const navbar = document.getElementById('navbar')
+const navbar = document.getElementById('nav-bar')
 const navClose = document.getElementById('nav-close')
 const navLink1 = document.getElementById('nav-link1')
 const navLink2 = document.getElementById('nav-link2')
